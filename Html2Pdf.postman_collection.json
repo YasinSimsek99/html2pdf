@@ -1,0 +1,108 @@
+{
+	"info": {
+		"_postman_id": "a553a7ba-f5a3-407f-b5ad-a9eac90fd443",
+		"name": "Html2Pdf",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Merge html and convert pdf",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "html",
+							"type": "file",
+							"src": [
+								"/C:/Users/yasin/Desktop/b6f94b4e-2872-4673-9e80-84d1a0622a71.html",
+								"/C:/Users/yasin/Desktop/c03aad70-e3cc-4fce-9daa-b58c1d14ce82.html"
+							]
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/upload/merge",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"upload",
+						"merge"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Html to Pdf",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "html",
+							"type": "file",
+							"src": "/C:/Users/yasin/Desktop/b6f94b4e-2872-4673-9e80-84d1a0622a71.html"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/upload/single",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"upload",
+						"single"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Multi Html to Pdf",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "html",
+							"type": "file",
+							"src": [
+								"/C:/Users/yasin/Desktop/b6f94b4e-2872-4673-9e80-84d1a0622a71.html",
+								"/C:/Users/yasin/Desktop/c03aad70-e3cc-4fce-9daa-b58c1d14ce82.html"
+							]
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/upload/multi",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"upload",
+						"multi"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
